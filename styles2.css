@@ -9,8 +9,64 @@
     justify-content: space-evenly;
 }
 
+.imagen-redondeada {
+    height: 350px;
+    overflow: hidden;
+}
+
+
+/*Estilos Generales*/
+section { /* Esto tambien se podría hacer con Bootstrapt*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;     
+}
+
+.seccion-oscura {
+    color: white;
+    background-color: #1b1b32;
+}
+
+
+/*Sección Hero*/
+
+.hero {
+    background-color: #f5f6f7;
+    min-height: 450px;
+    text-align: center;
+}
+
+.hero-principal {
+    padding: 3rem;
+}
+
+.separacion-imagen {
+    padding-top: 3rem;
+}
+
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: #615151;
+}
+
+/* Sobre mi */
+.sobre-mi {
+    height: 500px;
+    padding: 10px;
+}
+
+
 @media screen and (max-width: 767px) {
     .navbar-brand {
         display: none;
     }
 }
+
