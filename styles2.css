@@ -1,3 +1,8 @@
+/*Supuestamente esto evita que se "rompa" la página, hay que usarlo con cuidado*/
+/** {
+    min-width: 0;
+}*/
+
 /*  Barra de navegación */
 .navbar {
     padding: 2rem;
@@ -35,16 +40,39 @@ h1 {
     background-color: #1b1b32;
 }
 
+.seccion-clara {
+    color: black;
+    background-color: white;
+}
+
 .seccion-titulo {
     font-size: 2rem;
     padding: 15px 0;
     font-family: "Anton", sans-serif;
 }
 
+.seccion-descripcion {
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
 .seccion-texto {
     font-size: 1.2rem;
 }
 
+.btn-info {
+    font-size: 1.1rem;
+    margin: 20px;
+    
+}
+
+.texto-negro {
+    color: black;
+}
+
+.texto-blanco {
+    color: white;
+}
 
 /*Sección Hero*/
 
@@ -78,6 +106,123 @@ h1 {
     text-align: center;
 }
 
+/* Experiencia */
+
+.experiencia {
+    padding: 40px 40px 60px 40px; /*Este padding para cada lado en el orden de las agujas del reloj (parte superior, derecha, inferior, izquierda)*/
+
+}
+
+.experiencia .columna {
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in; /*Esto es para el hover*/
+}
+
+.experiencia .columna:hover{ /*hover es para asignar un estilo específico cuando el mouse este sobre el elemento*/
+     color: white;
+     background-color: #1b1b32; 
+    
+}
+
+
+
+.experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0; /*Esta forma de escribir el margen es: margin: margen-arriba-abajo margen-der-izq, por lo tanto aqui tenemos margen de 10px arriba y abajo y 0 a los costados.*/
+}
+
+.experiencia i {
+    font-size: 2.5rem;
+    color: #7ade30; 
+    background-color: #0a0a23;
+    padding: 8px 19px;
+    border-radius: 50%;
+}
+
+.badges-contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badges {
+    margin: 5px;
+}
+
+/*Proyectos*/
+
+.proyectos-recientes {
+    padding: 40px;
+    text-align: center;
+}
+
+.proyectos-recientes img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.proyecto {
+    position: relative;
+}
+
+.proyecto:hover img { /*Cuando el mouse se coloque sobre un proyecto, la imagen adopta el siguiente estilo*/
+    opacity: 0.2;        
+}
+
+.proyecto:hover .overlay {  /*Se puede leer como: Cuando el mouse este sobre el elemento proyecto se asigna el estilo de overlay que se desarrolla a continuación*/
+    opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+    display: flex;
+}
+
+.overlay i {
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 400px){
+    .overlay p {
+        font-size: 18px;
+    }
+
+    .overlay i {
+        font-size: 40px;
+    }
+}
 
 
 @media screen and (max-width: 767px) {
