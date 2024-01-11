@@ -35,6 +35,16 @@ h1 {
     background-color: #1b1b32;
 }
 
+.seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: "Anton", sans-serif;
+}
+
+.seccion-texto {
+    font-size: 1.2rem;
+}
+
 
 /*Sección Hero*/
 
@@ -62,6 +72,12 @@ h1 {
     height: 500px;
     padding: 10px;
 }
+
+.sobre-mi .contenedor {
+    max-width: 800px;
+    text-align: center;
+}
+
 
 
 @media screen and (max-width: 767px) {
