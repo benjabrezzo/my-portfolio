@@ -24,7 +24,7 @@
 section { /* Esto tambien se podría hacer con Bootstrapt*/
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
     justify-content: center;
 }
 
@@ -214,6 +214,22 @@ h1 {
     margin: 10px;
 }
 
+/* Articulos */
+
+.articulos {
+    min-height: 500px;
+    padding: 30px;
+}
+
+.articulos .card {
+    width: 80%;
+    max-width: 700px;
+    margin: 20px;
+}
+
+.articulos .card-header {
+    font-weight: bold;
+}
 @media screen and (max-width: 400px){
     .overlay p {
         font-size: 18px;
