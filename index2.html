@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- Metadatos -->  
+  <meta charset="UTF-8">
+  <meta name="author" content="Benjamin Brezzo">
+  <meta name="description" content="Portafolio de proyectos de Benjamin Brezzo">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Bootstrap">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Titulo -->
+  <title>Benjamin's Portfolio</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="./img/code-square.svg">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">  
+  <!-- Iconos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- CSS -->
+  <link href="styles2.css" rel="stylesheet">
+  <!-- Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- Barra de navegacion -->
+   <nav class="navbar navbar-expand-xl navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="./img/code-square.svg" width="50" alt="Logo de la página web">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+   </nav>
+   
+   <!-- Sección Hero -->
+   <section class = "hero align-items-stretch"> <!-- align-items-strctch es una clase para alinear los elementos y strctch es estirar.-->
+    <div class="hero-principal">
+      <img src="./img/all-nighter.jpeg" alt="Foto ilustrativa de un all nighter, basicamente mi espirutu animal." class="img-fluid rounded-circle imagen-redondeada">
+      <div class="separacion-imagen">
+        <h1>Hola, soy Benjamin Brezzo</h1>
+        <h2>Estudiante de Ingeniería en Computación y programación web.</h2>
+      </div>
+    </div>
+    <div class="hero-inferior">
+      <img>
+    </div>
+   </section>
+
+   <!-- Sección sobre mi -->
+   <section id="sobre-mi" class="sobre-mi seccion-oscura">
+    <div class="contenedor">
+      <h2 class="seccion-titulo">¿Quién es Benjamin Brezzo?</h2>
+      <p class="seccion-texto">Soy un estudiante de 23 años oriundo de Huinca Renancó, Córdoba, Argentina. Apasionado por el software y la electrónica digital. Mi primer lenguaje de programación fue C++ y en un futuro me gustaría dedicarme a la cultura de DevOps. En mis tiempos libres me gusta tocar instrumentos como la guitarra, bateria y bajo, y también me gusta ver películas y series.</p>
+    </div>
+   </section>
+
+   <!-- Sección Experiencia -->
+   <section class="experiencia seccion-clara">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Desarrollo web -->
+            <div class="columna col-12 col-md-4">
+              <i class="bi bi-laptop"></i>
+              <p class="experiencia-titulo">Desarrollo Web</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, omnis impedit earum necessitatibus, iusto quas quod voluptas, nulla facere ratione minus dicta voluptatum placeat nesciunt cumque veniam rem. Iusto, nulla?</p>
+              <div class="badges-contenedor">
+                <span class="badge text-bg-primary">HTML</span>
+                <span class="badge text-bg-primary">CSS</span>
+                <span class="badge text-bg-primary">JavaScript</span>
+                <span class="badge text-bg-primary">React</span>
+              </div>
+            </div>
+          <!-- Artículos-->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-motherboard"></i>
+              <p class="experiencia-titulo">IComp</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, omnis impedit earum necessitatibus, iusto quas quod voluptas, nulla facere ratione minus dicta voluptatum placeat nesciunt cumque veniam rem. Iusto, nulla?</p>
+              <div class="badges-contenedor">
+                <span class="badge text-bg-primary">C++</span>
+                <span class="badge text-bg-primary">Java</span>
+                <span class="badge text-bg-primary">Docker</span>
+                <span class="badge text-bg-primary">Git</span>
+              </div>
+          </div>
+          <!-- Estudiante -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-cassette"></i>
+            <p class="experiencia-titulo">Competencias Diversas</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, omnis impedit earum necessitatibus, iusto quas quod voluptas, nulla facere ratione minus dicta voluptatum placeat nesciunt cumque veniam rem. Iusto, nulla?</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Ingles Avanzado</span>
+              <span class="badge text-bg-primary">Producción Audiovisual</span>
+              <span class="badge text-bg-primary">Excel</span>
+              <span class="badge text-bg-primary">Arquitectura de PC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+   </section>
+
+   <!-- Proyectos -->
+    <seccion id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
+      <h3 class="seccion-descripcion">Estos son algunos de los proyectos que he creado recientemente...</h3>
+      <!-- Galeria de proyectos-->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1-->
+          <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="./img/proyecto1.png" alt="Proyecto 1">
+            <div class="overlay">
+              <p>Proyecto 1</p>
+              <div class="iconos-contenedor"></div>
+              <a href="https://github.com/benjabrezzo" target="_blank" rel="noopener noreferrer"> <!-- target = "_blank" es para que se abra en una nueva pestaña-->
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-laptop"></i>
+              </a>
+            </div>
+          </div>
+          </div> 
+        
+          <!-- Proyecto 2-->
+          <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="./img/proyecto2.png" alt="Proyecto 2">
+            <div class="overlay">
+              <p>Proyecto 2</p>
+              <div class="iconos-contenedor"></div>
+              <a href="https://github.com/benjabrezzo" target="_blank" rel="noopener noreferrer"> <!-- target = "_blank" es para que se abra en una nueva pestaña-->
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-laptop"></i>
+              </a>
+            </div>
+          </div>
+          </div> 
+
+          <!-- Proyecto 3-->
+          <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="./img/proyecto3.png" alt="Proyecto 3">
+            <div class="overlay">
+              <p>Proyecto 3</p>
+              <div class="iconos-contenedor"></div>
+              <a href="https://github.com/benjabrezzo" target="_blank" rel="noopener noreferrer"> <!-- target = "_blank" es para que se abra en una nueva pestaña-->
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-laptop"></i>
+              </a>
+            </div>
+          </div>
+          </div> 
+
+
+          <!-- Proyecto 4-->
+          <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="./img/proyecto4.png" alt="Proyecto 4">
+            <div class="overlay">
+              <p>Proyecto 4</p>
+              <div class="iconos-contenedor"></div>
+              <a href="https://github.com/benjabrezzo" target="_blank" rel="noopener noreferrer"> <!-- target = "_blank" es para que se abra en una nueva pestaña-->
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-laptop"></i>
+              </a>
+            </div>
+          </div>
+          </div> 
+
+          <!-- Proyecto 5-->
+          <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="./img/proyecto5.png" alt="Proyecto 5">
+            <div class="overlay">
+              <p>Proyecto 5</p>
+              <div class="iconos-contenedor"></div>
+              <a href="https://github.com/benjabrezzo" target="_blank" rel="noopener noreferrer"> <!-- target = "_blank" es para que se abra en una nueva pestaña-->
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-laptop"></i>
+              </a>
+            </div>
+          </div>
+          </div> 
+
+          <!-- Proyecto 6-->
+          <div class="col-12 col-md-6 col-lg-4">
+          <div class="proyecto">
+            <img src="./img/proyecto6.png" alt="Proyecto 6">
+            <div class="overlay">
+              <p>Proyecto 6</p>
+              <div class="iconos-contenedor"></div>
+              <a href="https://github.com/benjabrezzo" target="_blank" rel="noopener noreferrer"> <!-- target = "_blank" es para que se abra en una nueva pestaña-->
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="bi bi-laptop"></i>
+              </a>
+            </div>
+          </div>
+          </div> 
+
+        </div>
+        <a href="https://github.com/benjabrezzo" target="_blank" rel="noopener noreferrer">
+          <button type="button" class="btn btn-info">
+            Ver más proyectos
+            <i class="bi bi-arrow-right-circle-fill"></i>
+          </button>
+        </a>
+      </div>      
+    </seccion>  
+
+    <!-- Artículos -->
+    <section class="articulos justify-content-start">
+      <h2 class="seccion-titulo texto-negro">Artículos</h2>
+      <div class="card">
+        <div class="card-header">
+          Más recientes
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <a href="https://www.notion.so/Blog-47fd8d2622a949cd81850effcb2b21af?pvs=4" target="_blank" rel="noopener noreferrer">
+              Link a un blog de Notion
+            </a>
+          </li>
+
+          <li class="list-group-item">
+            <a href="https://www.notion.so/Blog-47fd8d2622a949cd81850effcb2b21af?pvs=4" target="_blank" rel="noopener noreferrer">
+              Link a otro blog de Notion
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://www.notion.so/Blog-47fd8d2622a949cd81850effcb2b21af?pvs=4" target="_blank" rel="noopener noreferrer">
+              Link a otro blog de Notion
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a href="https://www.notion.so/Blog-47fd8d2622a949cd81850effcb2b21af?pvs=4" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">Ver más artículos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto seccion-oscura">
+      <div class="container">
+        <div class="container text-center d-flex rectangulo justify-content-evenly">
+          <div class="row">
+            <div class="col-12 col-md-4 seccion-titulo">
+              ¡Hablemos!
+            </div>
+            <div class="col-12 col-md-4 descripcion">
+              Contactame para iniciar tu proyecto web y haré que tu visión se vuelva realidad
+            </div>
+            <div class="col-12 col-md-4">
+              <a href="mailto:benjabrezzo@gmail.com">
+                <button type="button">
+                  Contacto 
+                  <i class="bi bi-envelope-check-fill"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pie de página (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+      <svg class="footer-logo" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-square" viewBox="0 0 16 16">
+        <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+        <path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0m2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0"/>
+      </svg>
+      <p class="footer-texto text-center">Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://twitter.com/BenjaBrezzo" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+        <a href="https://github.com/benjabrezzo" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/benjamin-brezzo/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/benjabrezzo/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">Creado por Benjamin Brezzo (2024) &#169;</div>
+    </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
